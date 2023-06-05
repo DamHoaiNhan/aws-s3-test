@@ -25,7 +25,7 @@ jobs:
         npm run build  
 
     - name: Deploy to S3 Main
-      # if: ${{ github.ref == 'refs/heads/master' }}
+      # if: ${{ github.ref == 'refs/heads/main' }}
       uses: jakejarvis/s3-sync-action@v0.5.1 
       # Trong phần Deploy to S3, jakejarvis/s3-sync-action@master là một GitHub Action được sử dụng để đồng bộ các tệp với một bucket S3.
       # Nó sử dụng các biến môi trường để truy cập vào tài khoản AWS của bạn và bucket S3.
