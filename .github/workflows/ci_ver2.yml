@@ -1,4 +1,4 @@
-name: Deploy to S3
+name: Deploy to S23
 
 on:
   push:
@@ -13,7 +13,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Check Out
+    - name: Check Out Here
       uses: actions/checkout@v2
 
     - name: Set up Node.js
